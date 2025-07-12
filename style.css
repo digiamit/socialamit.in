@@ -1,111 +1,147 @@
-
-body {
-  margin: 0;
-  font-family: 'Outfit', sans-serif;
-  background-color: #0B0F19;
-  color: #FFFFFF;
-  overflow-x: hidden;
-}
-
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.animated-gradient {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, #4D1FFF, #00FFF7, #4D1FFF);
-  background-size: 600% 600%;
-  animation: gradientBG 20s ease infinite;
-  z-index: 0;
-  top: -50%;
-  left: -50%;
-  filter: blur(100px);
-  opacity: 0.2;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.floating-icons {
-  position: absolute;
-  width: 100%;
-  top: 20%;
-  left: 0;
-  display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  color: rgba(255,255,255,0.1);
-  animation: floatIcons 10s ease-in-out infinite;
-  z-index: 1;
-}
-
-@keyframes floatIcons {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-}
-
-.hero-content {
-  z-index: 10;
-  max-width: 800px;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-#typed-text {
-  color: #00FFF7;
-  font-weight: bold;
-  border-bottom: 2px solid #00FFF7;
-  padding: 0 5px;
-}
-
-.subheading {
-  font-size: 1.1rem;
-  color: #cccccc;
-  margin-bottom: 30px;
-}
-
-.cta-btn.glass {
-  display: inline-block;
-  padding: 14px 32px;
-  font-size: 1rem;
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(77, 31, 255, 0.4);
-  transition: all 0.3s ease;
-}
-
-.cta-btn.glass:hover {
-  background: rgba(77, 31, 255, 0.3);
-  box-shadow: 0 0 20px #4D1FFF;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  .cta-btn.glass {
-    padding: 12px 24px;
-  }
-}
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/css/style.css
+index 0000000000000000000000000000000000000000..371e8e125430a55670cbc6faa8219726a2ba0730 100644
+--- a//dev/null
++++ b/css/style.css
+@@ -0,0 +1,138 @@
++
++body {
++  margin: 0;
++  font-family: 'Outfit', sans-serif;
++  background-color: #0B0F19;
++  color: #FFFFFF;
++  overflow-x: hidden;
++}
++
++.hero {
++  position: relative;
++  height: 100vh;
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  padding: 0 20px;
++  text-align: center;
++  overflow: hidden;
++}
++
++.animated-gradient {
++  position: absolute;
++  width: 200%;
++  height: 200%;
++  background: linear-gradient(45deg, #4D1FFF, #00FFF7, #4D1FFF);
++  background-size: 600% 600%;
++  animation: gradientBG 20s ease infinite;
++  z-index: 0;
++  top: -50%;
++  left: -50%;
++  filter: blur(100px);
++  opacity: 0.2;
++}
++
++@keyframes gradientBG {
++  0% { background-position: 0% 50%; }
++  50% { background-position: 100% 50%; }
++  100% { background-position: 0% 50%; }
++}
++
++.floating-icons {
++  position: absolute;
++  width: 100%;
++  top: 20%;
++  left: 0;
++  display: flex;
++  justify-content: space-around;
++  font-size: 2rem;
++  color: rgba(255,255,255,0.1);
++  animation: floatIcons 10s ease-in-out infinite;
++  z-index: 1;
++}
++
++@keyframes floatIcons {
++  0%, 100% { transform: translateY(0); }
++  50% { transform: translateY(-20px); }
++}
++
++.hero-content {
++  z-index: 10;
++  max-width: 800px;
++}
++
++h1 {
++  font-size: 3rem;
++  line-height: 1.2;
++  font-weight: 700;
++  margin-bottom: 20px;
++}
++
++#typed-text {
++  color: #00FFF7;
++  font-weight: bold;
++  border-bottom: 2px solid #00FFF7;
++  padding: 0 5px;
++}
++
++.subheading {
++  font-size: 1.1rem;
++  color: #cccccc;
++  margin-bottom: 30px;
++}
++
++.cta-btn.glass {
++  display: inline-block;
++  padding: 14px 32px;
++  font-size: 1rem;
++  color: #fff;
++  border-radius: 50px;
++  text-decoration: none;
++  backdrop-filter: blur(10px);
++  background: rgba(255, 255, 255, 0.05);
++  border: 1px solid rgba(255, 255, 255, 0.2);
++  box-shadow: 0 0 10px rgba(77, 31, 255, 0.4);
++  transition: all 0.3s ease;
++}
++
++.cta-btn.glass:hover {
++  background: rgba(77, 31, 255, 0.3);
++  box-shadow: 0 0 20px #4D1FFF;
++}
++
++/* Responsive */
++@media (max-width: 768px) {
++  h1 {
++    font-size: 2.2rem;
++  }
++  .cta-btn.glass {
++    padding: 12px 24px;
++  }
++}
++
++/* Navigation Bar */
++.main-nav {
++  display: flex;
++  justify-content: center;
++  gap: 20px;
++  padding: 15px 20px;
++  background: rgba(0, 0, 0, 0.5);
++  backdrop-filter: blur(8px);
++  position: sticky;
++  top: 0;
++  z-index: 1000;
++}
++
++.main-nav a {
++  color: #fff;
++  text-decoration: none;
++  padding: 8px 12px;
++  border-radius: 8px;
++  transition: all 0.3s ease;
++}
++
++.main-nav a:hover {
++  color: #00FFF7;
++  text-shadow: 0 0 8px #00FFF7;
++  background: rgba(255, 255, 255, 0.1);
++}
+ 
+EOF
+)
