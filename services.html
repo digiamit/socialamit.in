@@ -1,26 +1,42 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Services – SocialAmit</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <section class="section">
-    <h1>Our Services</h1>
-    <div class="service-card">
-      <h2>🔍 AI Tool Reviews</h2>
-      <p>Curated, compared, and clearly explained for non-tech users.</p>
-    </div>
-    <div class="service-card">
-      <h2>🎨 Canva Design Packs</h2>
-      <p>Editable reels, carousels, stories for solopreneurs and creators.</p>
-    </div>
-    <div class="service-card">
-      <h2>💻 Smart Websites</h2>
-      <p>Futuristic GitHub-hosted animated websites just like this one!</p>
-    </div>
-  </section>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/services.html b/services.html
+index 71d9508f5205fac0ef589b21feb6ee4e320bafcd..a11297c09efdf78e5dda63ea36ee3e67a67e9f92 100644
+--- a/services.html
++++ b/services.html
+@@ -1,26 +1,33 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Services – SocialAmit</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
++  <nav class="main-nav">
++    <a href="index.html">Home</a>
++    <a href="about.html">About</a>
++    <a href="services.html">Services</a>
++    <a href="blog.html">Blog</a>
++    <a href="contact.html">Contact</a>
++  </nav>
+   <section class="section">
+     <h1>Our Services</h1>
+     <div class="service-card">
+       <h2>🔍 AI Tool Reviews</h2>
+       <p>Curated, compared, and clearly explained for non-tech users.</p>
+     </div>
+     <div class="service-card">
+       <h2>🎨 Canva Design Packs</h2>
+       <p>Editable reels, carousels, stories for solopreneurs and creators.</p>
+     </div>
+     <div class="service-card">
+       <h2>💻 Smart Websites</h2>
+       <p>Futuristic GitHub-hosted animated websites just like this one!</p>
+     </div>
+   </section>
+ </body>
+ </html>
+ 
+EOF
+)
