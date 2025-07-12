@@ -2,131 +2,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SocialAmit – Futuristic AI Marketing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(135deg, #000000, #0d0d0d);
-      color: #f4f4f4;
-      font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: radial-gradient(circle, #111, #000);
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: #FF6A00;
-      text-shadow: 0 0 10px #ff9900;
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 10px auto;
-      color: #cccccc;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .cta {
-      background: #FF6A00;
-      color: white;
-      padding: 18px 36px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      margin-top: 30px;
-      text-decoration: none;
-      box-shadow: 0 0 12px #FF6A00;
-    }
-
-    footer {
-      padding: 20px;
-      background: #111;
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    .neon {
-      color: #ff9900;
-      text-shadow: 0 0 5px #ff6a00, 0 0 10px #ff6a00, 0 0 20px #ff6a00;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SocialAmit – Automate. Design. Grow.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <h1 class="neon">Welcome to the Future of Marketing</h1>
-    <p>SocialAmit.ai – Where AI Meets Automation for Growth</p>
-  </header>
-
-  <div class="section" id="about">
-    <h2 class="neon">About Us</h2>
-    <p>We help creators, solopreneurs, and small brands automate their growth using AI tools, content systems, and smart marketing strategies.</p>
-  </div>
-
-  <div class="section" id="services">
-    <h2 class="neon">What We Do</h2>
-    <div class="services">
-      <div class="card">
-        <h3>🧠 AI Content Systems</h3>
-        <p>We build 30-day content machines powered by ChatGPT + Canva.</p>
-      </div>
-      <div class="card">
-        <h3>🎥 Reels & Video Automation</h3>
-        <p>Auto-generate viral content using AI voice, templates, and scripts.</p>
-      </div>
-      <div class="card">
-        <h3>🤖 Marketing Bots</h3>
-        <p>Set up DMs, WhatsApp, and lead gen automation using AI agents.</p>
-      </div>
-      <div class="card">
-        <h3>🌐 Website Design</h3>
-        <p>Modern, AI-inspired websites built using no-code & fast tools.</p>
-      </div>
+  <section class="hero">
+    <div class="background-blob"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>We help solopreneurs<br><span id="typed-text"></span></h1>
+      <p class="subheading">AI Automation | Canva Designing | Web Development</p>
+      <a href="#contact" class="cta-btn">Let’s Work Together</a>
     </div>
-  </div>
+  </section>
 
-  <div class="section" id="cta">
-    <h2 class="neon">Ready to Grow with AI?</h2>
-    <a href="mailto:socialamit.in@gmail.com" class="cta">🚀 Get Your Free AI Audit</a>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 SocialAmit. All rights reserved.<br>
-    IG: @socialamit.ai | Email: socialamit.in@gmail.com</p>
-  </footer>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["Automate.", "Design.", "Grow."],
+      typeSpeed: 80,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
