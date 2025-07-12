@@ -1,1 +1,31 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Home</title><link rel='stylesheet' href='css/style.css'></head><body><h1>Home Page</h1><nav><a href='about.html'>About</a> | <a href='services.html'>Services</a> | <a href='blog.html'>Blog</a> | <a href='contact.html'>Contact</a></nav></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SocialAmit – Automate. Design. Grow.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="hero">
+    <div class="animated-gradient"></div>
+    <div class="hero-content">
+      <h1>Solopreneurs, Scale Smart with <span id="typed-text"></span></h1>
+      <p class="subheading">AI Automation | Canva Designing | Web Development</p>
+      <a href="services.html" class="cta-btn glass">Explore Services</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["AI.", "Design.", "Web."],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
