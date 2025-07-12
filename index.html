@@ -1,42 +1,54 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SocialAmit – Automate. Design. Grow.</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="hero">
-    <div class="animated-gradient"></div>
-    <div class="floating-icons">
-      <span class="icon">⚙️</span>
-      <span class="icon">🎨</span>
-      <span class="icon">💻</span>
-    </div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Solopreneurs, Scale Smart with <span id="typed-text"></span></h1>
-      <p class="subheading">AI Automation | Canva Designing | Web Development</p>
-      <a href="#contact" class="cta-btn glass">Let’s Work Together</a>
-    </div>
-  </section>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed('#typed-text', {
-      strings: ["AI.", "Design.", "Web."],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true
-    });
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+index aac03006e18a6489a6d363fe568ff8c530ab340e..df1c922ec2ff0b95dab30206a48cdf7b1ee714fc 100644
+--- a/index.html
++++ b/index.html
+@@ -1,37 +1,44 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>SocialAmit – Automate. Design. Grow.</title>
+-  <link rel="stylesheet" href="style.css" />
++  <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
++  <nav class="main-nav">
++    <a href="index.html">Home</a>
++    <a href="about.html">About</a>
++    <a href="services.html">Services</a>
++    <a href="blog.html">Blog</a>
++    <a href="contact.html">Contact</a>
++  </nav>
+   <section class="hero">
+     <div class="animated-gradient"></div>
+     <div class="floating-icons">
+       <span class="icon">⚙️</span>
+       <span class="icon">🎨</span>
+       <span class="icon">💻</span>
+     </div>
+     <div class="hero-content" data-aos="fade-up">
+       <h1>Solopreneurs, Scale Smart with <span id="typed-text"></span></h1>
+       <p class="subheading">AI Automation | Canva Designing | Web Development</p>
+       <a href="#contact" class="cta-btn glass">Let’s Work Together</a>
+     </div>
+   </section>
+ 
+   <!-- Scripts -->
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+     var typed = new Typed('#typed-text', {
+       strings: ["AI.", "Design.", "Web."],
+       typeSpeed: 100,
+       backSpeed: 50,
+       loop: true
+     });
+   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+EOF
+)
