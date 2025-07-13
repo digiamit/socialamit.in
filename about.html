@@ -1,30 +1,109 @@
+<!DOCTYPE html><html><head>
+<meta name="description" content="SocialAmit is a futuristic AI-powered digital marketing agency helping solopreneurs grow with automation, reels, and content systems.">
+<meta name="keywords" content="AI marketing, automation, reels, digital marketing, socialamit, content creation, solopreneur tools, AI tools India">
+<meta name="author" content="SocialAmit">
+<meta property="og:title" content="SocialAmit – AI Marketing for Solopreneurs" />
+<meta property="og:description" content="Grow your brand with AI-powered content, automation, and reels. Join the future of marketing today." />
+<meta property="og:url" content="https://socialamit.in/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://socialamit.in/assets/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SocialAmit – AI Marketing for Solopreneurs" />
+<meta name="twitter:description" content="Grow your brand with AI-powered content, automation, and reels." />
+<meta name="twitter:image" content="https://socialamit.in/assets/og-image.jpg" />
+<title>About - SocialAmit</title><link rel='stylesheet' href='css/style.css'>
+<style>
+  .typing-text {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-top: 20px;
+    border-right: 2px solid #ff9900;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 1s step-end infinite;
+  }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Us – SocialAmit</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <section class="section">
-    <h1>About SocialAmit</h1>
-    <img src="assets/amit.jpg" alt="Amit" class="profile">
-    <p>I’m Amit, a digital hustler turning AI into real results for creators. With 5+ years of marketing experience and an engineering background, I simplify tools for solopreneurs. My mission is to make AI work for India’s creator economy.</p>
-    <div class="social-links">
-      <a href="https://instagram.com/socialamit.ai" target="_blank">Instagram</a>
-      <a href="https://linkedin.com/in/socialamit" target="_blank">LinkedIn</a>
-      <a href="mailto:socialamit@gmail.com">Email</a>
-    </div>
-  </section>
-  <section class="section">
-    <h2>💬 What Clients Say</h2>
-    <div class="testimonial-card">
-      “SocialAmit’s AI workflows saved me 10+ hours weekly!” – Priya, Coach
-    </div>
-    <div class="testimonial-card">
-      “He made AI so simple I now use it daily.” – Rohan, Content Creator
-    </div>
-  </section>
-</body>
-</html>
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  .chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1a1a1a;
+    border: 1px solid #ffa500;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,165,0,0.4);
+    max-width: 300px;
+    font-size: 0.9rem;
+    z-index: 1000;
+  }
+
+  .chatbot h4 {
+    margin-top: 0;
+    color: #ffa500;
+  }
+</style>
+</head><body><header><h1>About Us</h1><nav><a href='index.html'>Home</a> | <a href='services.html'>Services</a> | <a href='testimonials.html'>Testimonials</a> | <a href='contact.html'>Contact</a></nav></header><section><p>SocialAmit is a futuristic AI-powered digital marketing agency helping solopreneurs and startups automate and scale their business.</p></section>
+<div id="preloader"><div id="loader"></div></div>
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+  VANTA.NET({
+    el: "body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xff6a00,
+    backgroundColor: 0x0f0f0f,
+    points: 10.00,
+    maxDistance: 22.00,
+    spacing: 18.00
+  })
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const el = document.createElement('div');
+    el.className = 'typing-text';
+    el.textContent = 'Helping Solopreneurs Grow with AI-Powered Marketing...';
+    document.querySelector('header').appendChild(el);
+  });
+</script>
+
+<div class="chatbot">
+  <h4>🤖 SocialAmit Bot</h4>
+  <p>Hi there! Need help with content, automation or design?<br><strong>Email us:</strong> socialamit.in@gmail.com</p>
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('section, header, footer, .card, .chatbot', {
+    delay: 200,
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'bottom',
+    reset: false
+  });
+</script>
+</body></html>
